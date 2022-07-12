@@ -7,7 +7,7 @@
 create user devme@localhost identified by 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'devme'@'localhost';
 ```
-Nếu không, edit JDMC configuration ở file `ConnectionUtils`.
+Nếu không, edit JDBC configuration ở file `ConnectionUtils`.
 
 4. Chạy `sql.ini` file để tạo database, tables....
 
