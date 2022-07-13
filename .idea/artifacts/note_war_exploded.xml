@@ -13,6 +13,14 @@
         <element id="directory" name="classes">
           <element id="module-output" name="note" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.8.2" />
+          <element id="library" level="project" name="Maven: org.apiguardian:apiguardian-api:1.1.2" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.2" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-engine:1.8.2" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.7.3" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/note-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

@@ -6,7 +6,7 @@
 
     <groupId>com.main</groupId>
     <artifactId>note</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>note</name>
     <packaging>war</packaging>
 
@@ -44,6 +44,8 @@
     </dependencies>
 
     <build>
+        <finalName>note</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

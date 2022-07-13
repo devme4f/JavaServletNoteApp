@@ -12,9 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="/static/js/index.js"></script>
-    <link href="/static/css/index.css" rel="stylesheet">
-    <link href="/static/images/favicon.ico" rel="Shortcut Icon">
+    <link href="static/images/favicon.ico" rel="Shortcut Icon">
+    <script src="static/js/index.js"></script>
+    <link href="static/css/index.css" rel="stylesheet">
 </head>
 <body>
 <%-- implement notification --%>
@@ -99,7 +99,7 @@
                 <div class="modal-body">
                     <div class="notes-box">
                         <div class="notes-content">
-                            <form method="POST" action="/" id="addnotesmodalTitle" enctype="application/x-www-form-urlencoded">
+                            <form method="POST" id="addnotesmodalTitle" enctype="application/x-www-form-urlencoded">
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
                                         <div class="note-title">

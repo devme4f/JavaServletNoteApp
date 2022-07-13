@@ -3,6 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <!-- servlet(mapping) -->
     <servlet>
         <servlet-name>NoteServlet</servlet-name>
         <servlet-class>com.main.note.NoteServlet</servlet-class>
@@ -10,10 +12,6 @@
     <servlet-mapping>
         <servlet-name>NoteServlet</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>/static/*</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>DeleteNoteServlet</servlet-name>
@@ -31,4 +29,10 @@
         <servlet-name>TypeNoteServlet</servlet-name>
         <url-pattern>/typeNote</url-pattern>
     </servlet-mapping>
+
+    <!-- context parameter-->
+    <context-param>
+        <param-name>root</param-name>
+        <param-value>/note</param-value>
+    </context-param>
 </web-app>

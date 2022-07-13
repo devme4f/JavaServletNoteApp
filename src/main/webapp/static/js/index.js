@@ -4,7 +4,7 @@ $(function() {
             event.stopPropagation();
             $(this).parents('.single-note-item').remove();
             var note_id = $(this).attr("id");
-            fetch("/deleteNote?id="+note_id);//.then(response => response.json()).then(data => console.log(data));
+            fetch("deleteNote?id="+note_id);//.then(response => response.json()).then(data => console.log(data));
         })
     }
 
@@ -27,19 +27,19 @@ $(function() {
                 $(this).parents('.single-note-item').removeClass('note-important');
                 $(this).parents('.single-note-item').toggleClass(getSplitclass);
                 var note_id = $(this).attr("id");
-                fetch("/typeNote?id="+note_id+"&type="+"note-business");
+                fetch("typeNote?id="+note_id+"&type="+"note-business");
             } else if ($(this).hasClass('badge-social')) {
                 $(this).parents('.single-note-item').removeClass('note-business');
                 $(this).parents('.single-note-item').removeClass('note-important');
                 $(this).parents('.single-note-item').toggleClass(getSplitclass);
                 var note_id = $(this).attr("id");
-                fetch("/typeNote?id="+note_id+"&type="+"note-social");
+                fetch("typeNote?id="+note_id+"&type="+"note-social");
             } else if ($(this).hasClass('badge-important')) {
                 $(this).parents('.single-note-item').removeClass('note-social');
                 $(this).parents('.single-note-item').removeClass('note-business');
                 $(this).parents('.single-note-item').toggleClass(getSplitclass);
                 var note_id = $(this).attr("id");
-                fetch("/typeNote?id="+note_id+"&type="+"note-important");
+                fetch("typeNote?id="+note_id+"&type="+"note-important");
             }
         });
     }

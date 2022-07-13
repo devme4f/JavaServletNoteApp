@@ -61,7 +61,7 @@ public class NoteServlet extends HttpServlet {
         String msg = "";
         if (emtyStr(title) || emtyStr(content)) {
             msg = "Title and Content cannot be empty!";
-            String redirectURI = "/" + "?_e=" + urlEncode(error) + "&_m=" + urlEncode(msg) + "&_s=" + status;
+            String redirectURI = getServletContext().getInitParameter("root") + "?_e=" + urlEncode(error) + "&_m=" + urlEncode(msg) + "&_s=" + status;
             response.sendRedirect(redirectURI);
             return;
         }
@@ -81,7 +81,7 @@ public class NoteServlet extends HttpServlet {
             error = e.getMessage();
         }
 
-        String redirectURI = "/" + "?_e=" + urlEncode(error) + "&_m=" + urlEncode(msg) + "&_s=" + status;
+        String redirectURI = getServletContext().getInitParameter("root") + "?_e=" + urlEncode(error) + "&_m=" + urlEncode(msg) + "&_s=" + status;
         response.sendRedirect(redirectURI);
     }
 }
